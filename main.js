@@ -1,41 +1,54 @@
-alert("Vá estudar nene")  
+alert('Essa página contém vírus');
 
 function tocaSomPom(){document.querySelector('#som_tecla_pom').play();}
 
-document.querySelector('.tecla_pom').onclick = tocaSompom;
+document.querySelector('.tecla_pom').onclick = tocaSomPom;
 
-function tocaSomClap(){document.querySelector('#som_tecla_clap').play();} 
 
-document.querySelector('.tecla_Clap').onclick = tocaSomclap;
 
-function tocaSomTim(){document.querySelector('#som_tecla_tim').play();}
+function tocaSomclap(){document.querySelector('#som_tecla_clap').play();}
 
-document.querySelector('.tecla_Tim').onclick = tocaSomtim;
+document.querySelector('.tecla_clap').onclick = tocaSomclap;
 
-function tocaSomPuff(){document.querySelector('#som_tecla_puff').play();}
 
-document.querySelector('.tecla_Puff').onclick = tocaSompuff;
 
-function tocaSomSplash(){document.querySelector('#som_tecla_splash').play();}
+function tocaSomtim(){document.querySelector('#som_tecla_tim').play();}
 
-document.querySelector('.tecla_Splash').onclick = tocaSomsplash;
+document.querySelector('.tecla_tim').onclick = tocaSomtim;
 
-function tocaSomToim(){document.querySelector('#som_tecla_toim').play();}
 
-document.querySelector('.tecla_Toim').onclick = tocaSomtoim;
 
-function tocaSomPsh(){document.querySelector('#som_tecla_psh').play();}
+function tocaSompuff(){document.querySelector('#som_tecla_puff').play();}
 
-document.querySelector('.tecla_Psh').onclick = tocaSompsh;
+document.querySelector('.tecla_puff').onclick = tocaSompuff;
 
-function tocaSomTic(){document.querySelector('#som_tecla_tic').play();}
 
-document.querySelector('.tecla_Tic').onclick = tocaSomtic;
 
-function tocaSomTom(){document.querySelector('#som_tecla_tom').play();}
+function tocaSomsplash(){document.querySelector('#som_tecla_splash').play();}
 
-document.querySelector('.tecla_Tom').onclick = tocaSomTom;
+document.querySelector('.tecla_splash').onclick = tocaSomsplash;
 
-document.querySelectorAll('.tecla')
+function tocaSomtoim(){document.querySelector('#som_tecla_toim').play();}
 
-NodeList(9) [button.tecla.tecla_pom, button.tecla.tecla_clap, button.tecla.tecla_tim, button.tecla.tecla_puff, button.tecla.tecla_splash, button.tecla.tecla_toim, button.tecla.tecla_psh, button.tecla.tecla_tic, button.tecla.tecla_tom]
+document.querySelector('.tecla_toim').onclick = tocaSomtoim;
+
+function tocaSompsh(){document.querySelector('#som_tecla_psh').play();}
+
+document.querySelector('.tecla_psh').onclick = tocaSompsh;
+
+function tocaSomtic(){document.querySelector('#som_tecla_tic').play();}
+
+document.querySelector('.tecla_tic').onclick = tocaSomtic;
+
+function tocaSomtom(){document.querySelector('#som_tecla_tom').play();}
+
+document.querySelector('.tecla_tom').onclick = tocaSomtom;
+
+const ListaDeTecla = document.querySelectorAll('.tecla') 
+ 
+let contador = 0;
+
+while (condition) {ListaDeTecla['0'].onclick=tocaSomPom; 
+contador= contador+1;
+console.log(contador);
+}
